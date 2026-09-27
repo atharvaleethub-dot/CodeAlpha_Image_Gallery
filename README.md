@@ -1,16 +1,115 @@
-# React + Vite
+# 🖼️ CodeAlpha Image Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, modern image gallery built with **React**, **Vite**, and **Tailwind CSS** — created for Task 1 of the **CodeAlpha Frontend Development Internship**.
 
-Currently, two official plugins are available:
+Browse photos across five categories, search by title or category, favorite your best shots, and view them full-screen in a keyboard-friendly lightbox — all wrapped in a polished, animated UI with full dark mode support.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+**Core**
+- Fully responsive image gallery (mobile, tablet, desktop)
+- Custom React components styled with Tailwind CSS
+- Full-screen lightbox with Previous / Next navigation
+- Smooth hover, fade and scale transitions
+- Mobile-friendly sticky navbar with a slide-down menu
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Bonus**
+- 🔍 Search by title or category
+- 🗂️ Category filters (Nature, Cities, Animals, Food, Technology)
+- 🌗 Dark / light mode, saved across visits
+- ⬇️ One-click image download with a clean file name
+- ❤️ Favorites, saved to Local Storage
+- ⌨️ Keyboard navigation (← → to browse, Esc to close)
+- 🔢 Live image counter in the lightbox
+- 🐢 Lazy-loaded images for faster initial load
+- 💀 Skeleton loading animation per photo
+- ♿ Accessible buttons, ARIA labels, and visible keyboard focus rings
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Category | Tools |
+|---|---|
+| Library | React 19 (via Vite) |
+| Styling | Tailwind CSS v4 |
+| Icons | lucide-react |
+| Language | JavaScript (ES6+) |
+| Storage | Browser Local Storage |
+| Linting | ESLint |
+
+## 📁 Folder Structure
+
+CodeAlpha_Image_Gallery/
+│
+├── public/
+│ └── images/
+│ ├── nature/
+│ ├── cities/
+│ ├── animals/
+│ ├── food/
+│ └── technology/
+│
+├── src/
+│ ├── assets/
+│ ├── components/
+│ │ ├── Navbar.jsx
+│ │ ├── Hero.jsx
+│ │ ├── SearchBar.jsx
+│ │ ├── CategoryFilter.jsx
+│ │ ├── Gallery.jsx
+│ │ ├── ImageCard.jsx
+│ │ ├── Lightbox.jsx
+│ │ ├── Tooltip.jsx
+│ │ ├── ThemeToggle.jsx
+│ │ └── Footer.jsx
+│ │
+│ ├── data/
+│ │ └── images.js
+│ │
+│ ├── hooks/
+│ │ └── useLocalStorage.js
+│ │
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── index.css
+│
+├── README.md
+├── package.json
+└── vite.config.js
+
+
+## 🚀 Installation
+
+Clone the repository and run it locally:
+
+```bash
+git clone https://github.com/atharvaleethub-dot/CodeAlpha_Image_Gallery.git
+cd CodeAlpha_Image_Gallery
+npm install
+npm run dev
+```
+
+Then open the local address shown in your terminal (usually `http://localhost:5173`).
+
+## 📦 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start the local development server |
+| `npm run build` | Create an optimized production build in `dist/` |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Check the code for lint errors |
+
+## 🔮 Future Improvements
+
+- Deploy the project publicly (Vercel / Netlify)
+- Add pagination or infinite scroll for larger image sets
+- Support user-uploaded images
+- Add unit tests with Vitest and React Testing Library
+
+## 📄 License
+
+This project was built for educational purposes as part of the **CodeAlpha Frontend Development Internship** and is free to use and modify.
+
+---
+
+**Built by Atharva** · [GitHub](https://github.com/atharvaleethub-dot)
